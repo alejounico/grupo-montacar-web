@@ -314,13 +314,20 @@
     to{transform:translateX(-50%);}
   }
   .ticker-item{
-    font-size:14px;
-    font-weight:500;
-    letter-spacing:.03em;
-    color:var(--gray-300);
-    padding:0 30px;
+    display:flex;
+    align-items:center;
+    padding:0 34px;
     white-space:nowrap;
   }
+  .ticker-item img{
+    height:28px;
+    width:auto;
+    max-width:120px;
+    object-fit:contain;
+    filter:grayscale(100%) opacity(0.55);
+    transition:filter .2s ease;
+  }
+  .brands-strip:hover .ticker-item img{filter:grayscale(0%) opacity(1);}
 
   /* ---------- SECTION SHELL ---------- */
   .section{padding:100px 0;}
@@ -590,26 +597,26 @@
   <!-- BRANDS TICKER -->
   <div class="brands-strip" id="marcas" aria-hidden="true">
     <div class="ticker-track">
-      <span class="ticker-item">Toyota</span>
-      <span class="ticker-item">Hyster</span>
-      <span class="ticker-item">Yale</span>
-      <span class="ticker-item">Clark</span>
-      <span class="ticker-item">Komatsu</span>
-      <span class="ticker-item">TCM</span>
-      <span class="ticker-item">Linde</span>
-      <span class="ticker-item">Caterpillar</span>
-      <span class="ticker-item">Nissan</span>
-      <span class="ticker-item">Mitsubishi</span>
-      <span class="ticker-item">Toyota</span>
-      <span class="ticker-item">Hyster</span>
-      <span class="ticker-item">Yale</span>
-      <span class="ticker-item">Clark</span>
-      <span class="ticker-item">Komatsu</span>
-      <span class="ticker-item">TCM</span>
-      <span class="ticker-item">Linde</span>
-      <span class="ticker-item">Caterpillar</span>
-      <span class="ticker-item">Nissan</span>
-      <span class="ticker-item">Mitsubishi</span>
+      <span class="ticker-item"><img src="logos/toyota.png" alt="Toyota"></span>
+      <span class="ticker-item"><img src="logos/hyster.png" alt="Hyster"></span>
+      <span class="ticker-item"><img src="logos/yale.png" alt="Yale"></span>
+      <span class="ticker-item"><img src="logos/clark.png" alt="Clark"></span>
+      <span class="ticker-item"><img src="logos/komatsu.png" alt="Komatsu"></span>
+      <span class="ticker-item"><img src="logos/tcm.png" alt="TCM"></span>
+      <span class="ticker-item"><img src="logos/linde.png" alt="Linde"></span>
+      <span class="ticker-item"><img src="logos/caterpillar.png" alt="Caterpillar"></span>
+      <span class="ticker-item"><img src="logos/nissan.png" alt="Nissan"></span>
+      <span class="ticker-item"><img src="logos/mitsubishi.png" alt="Mitsubishi"></span>
+      <span class="ticker-item"><img src="logos/toyota.png" alt="Toyota"></span>
+      <span class="ticker-item"><img src="logos/hyster.png" alt="Hyster"></span>
+      <span class="ticker-item"><img src="logos/yale.png" alt="Yale"></span>
+      <span class="ticker-item"><img src="logos/clark.png" alt="Clark"></span>
+      <span class="ticker-item"><img src="logos/komatsu.png" alt="Komatsu"></span>
+      <span class="ticker-item"><img src="logos/tcm.png" alt="TCM"></span>
+      <span class="ticker-item"><img src="logos/linde.png" alt="Linde"></span>
+      <span class="ticker-item"><img src="logos/caterpillar.png" alt="Caterpillar"></span>
+      <span class="ticker-item"><img src="logos/nissan.png" alt="Nissan"></span>
+      <span class="ticker-item"><img src="logos/mitsubishi.png" alt="Mitsubishi"></span>
     </div>
   </div>
 
